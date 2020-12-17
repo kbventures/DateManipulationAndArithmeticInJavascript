@@ -31,5 +31,32 @@ This means:
 new Date("25 July 2016").getTime() !== new Date("2016-07-25").getTime()
 
 new Date("2016-07-25").getTime() === new Date("2016-07-25T00:00:00Z").getTime()
+
+new Date(“25 July 2016”).getTime()
+Will give you local time (same date but local time offset)
+
+new Date(“2016-07-25”).getTime()
+Will give you UTC time.
+
+It is an implementation-specific issue (different browsers may do different things). 
+
+In all current implementations it will, as of now (2020), always parse the second one as expected (UTC time), first one :man_shrugging:t3: 
+
+– it should be consistent across all contemporary implementations, but I don’t know that for sure.
+
+If you want the second to be local, it needs to be longform, ie you need to specify the time and timezone offset (for example,
+
+to use local system time, as the first one does automatically, 2016-07-25T00:00:00Z)
+
+JS’ Date is not good, there are a lot of little issues like this that have built up over the years. 
+
+It works for the most part, and is normally more than usable, but you need to be careful with it.
+
+There is a new API (Temporal) that hopefully should remove the need to use Date in most cases,
+
+but even if its API gets finalised it’s a year or two off being finished and in browsers I think.
+
 */
+
+
 

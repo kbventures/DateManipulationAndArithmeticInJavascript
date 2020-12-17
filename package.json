@@ -1,0 +1,19 @@
+{
+  "name": "datemanipulationandarithmeticinjavascript",
+  "version": "1.0.0",
+  "description": "Date Manipulation And Arithmetic In Javascript:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbventures/DateManipulationAndArithmeticInJavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbventures/DateManipulationAndArithmeticInJavascript/issues"
+  },
+  "homepage": "https://github.com/kbventures/DateManipulationAndArithmeticInJavascript#readme"
+}
